@@ -1,0 +1,149 @@
+	<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--
+Design by TEMPLATED
+http://templated.co
+Released for free under the Creative Commons Attribution License
+
+Name       : Amaryllis 
+Description: A two-column, fixed-width design with dark color scheme.
+Version    : 1.0
+Released   : 20140131
+
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900|Quicksand:400,700|Questrial" rel="stylesheet" />
+<link href="default.css" rel="stylesheet" type="text/css" media="all" />
+<link href="fonts.css" rel="stylesheet" type="text/css" media="all" />
+
+<!--[if IE 6]><link href="default_ie6.css" rel="stylesheet" type="text/css" /><![endif]-->
+
+</head>
+<body>
+<div id="header-wrapper">
+	<div id="header" class="container">
+		<div id="logo">
+			<h1><a href="#"> <img src="SAPS.png" width="100" height="50" class="img-circle img-responsive cnt-img" />SAP End users<br />
+Learn to operate SAP</a></h1>
+		</div>
+<div id="menu">
+			<ul>
+				<li><a href="../index.html" accesskey="1" title="">Homepage</a></li>
+				<li><a href="index.html" accesskey="2" title="">Introduction</a></li>
+				<li><a href="mod.html" accesskey="3" title="">Modules</a></li>
+<li class="active"><a href="pp.html" accesskey="5" title="">SAP PP</a></li>
+				<li><a href="Trans.html" accesskey="4" title="">Transactions</a></li>
+<li><a href="#" accesskey="5" title="">Contact Us</a></li>
+
+			</ul>
+		</div>
+
+		</div>
+</div>
+<div class="wrapper">
+	<div id="" class="container">
+		<div class="title">
+<br>
+<br>
+<br>
+
+<span style="font-family:verdana,geneva,sans-serif;">
+<h2><strong>SAP Production Planning (PP)</strong></h2>
+<p><span style="font-family:verdana,geneva,sans-serif;"> SAP PP is one of the most important module in <strong>SAP System</strong>. It handles all business process related to production of a company. In SAP system modular data is classified as Master data and transaction data where the master data is defined	as the individual module objects. PP master data must be used before use of transactions.</p>
+<p><span style="font-family:verdana,geneva,sans-serif;">
+Before discussing transactions and their usage, we will look into some basic terms used in SAP (required in specified fields of transactions to execute your desired reports). Some of the basic but important terms are as follows:</p>
+<span style="font-family:verdana,geneva,sans-serif;">
+<h3><strong>Company code</strong></h3>
+<p><span style="font-family:verdana,geneva,sans-serif;">
+Company code is used in order to define the organizational unit for which a complete self-contained set of accounts can be drawn for external reporting. This includes the entry of all transactions that must be posted and the creation of all items for legal individual financial statements, for example, the balance sheet and the profit and loss statement.</p>
+
+<span style="font-family:verdana,geneva,sans-serif;">
+<h3><strong>Plant</strong></h3>
+<p><span style="font-family:verdana,geneva,sans-serif;">
+From SAP point of view Plant is a place where either material is produced, or goods and services are provided. A plant can be subdivided according to production, procurement, maintenance, and materials planning aspects. Every Plant is assigned to a Company Code. This ensures that stocks and stock values can be managed separately in each company. Valuation of stocks takes place per plant. This means that valuation prices can differ from one plant to the others.</p>
+<h3><strong>Storage Location</strong></h3>
+<p><span style="font-family:verdana,geneva,sans-serif;">
+Storage location is an organizational unit which actually differentiates between different material stocks in a Plant. Storage location is a place where stock is kept physically. Plant can be consisting of multiple storage location. All data is stored at storage location level for a particular storage location.</p>
+<h3><strong>Resource</strong></h3>
+<p><span style="font-family:verdana,geneva,sans-serif;">
+Resources are production facilities and persons involved in a production process that have capacities. They are subdivided into categories to specify their suitability for certain purposes or their use in certain processes.</p>
+<p>Resources can be, for example:</p>
+    <ol>
+<li>
+1- Persons involved in production that are also recorded as employees in personnel administration
+      </li>
+<li>
+2- Parts of the plant that are used for production (processing units)
+      </li>
+<li>
+3- Parts of the plant that are used for intermediate storage (storage resources)
+      </li>
+<li>
+4- Parts of the plant that are used for both intermediate storage and production ( 
+          <em>storage resources / processing units</em>)</li>
+</ol>
+<p><span style="font-family:verdana,geneva,sans-serif;">In the master data for resources Capacities of plant, machines, personnel, means of transport, warehouses
+Resource-specific planning parameters for Supply Network Planning (SNP), Capable-to-Match (CTM) and Production Planning and Detailed Scheduling (PP/DS) are defined.
+
+Resource data is relevant to the planning of order dates taking working times and the available capacities of the resources into account.</p>
+<h3><strong>Production scheduler/ supervisor</strong></h3>
+<p><span style="font-family:verdana,geneva,sans-serif;">
+Production Scheduler is the scheduler responsible for a material in production activity control. The production scheduler determines how capacity requirements are calculated for a material during a scheduling run. You can use the Production Scheduler for the purpose of reporting, there are standard reports in SAP, that can be executed for a given production scheduler/s.</p>
+<span style="font-family:verdana,geneva,sans-serif;">
+<h3><strong>Material Master in PP</strong></h3>
+<p><span style="font-family:verdana,geneva,sans-serif;">
+Material Master comprises of all the basic data of the material for each department. The data covers all the relevant information required for the transactional flow, e.g. sales, planning, production of the material. Material Master covers all the descriptive and control data, and the flow of information depend on fields maintained within it. The integration of all material data in a single database object eliminates redundant data storage. Material Masters are created once and can be changed or extended whenever required.</p>
+
+
+
+
+
+
+
+
+<span style="font-family:verdana,geneva,sans-serif;">
+<h3><strong>BOM</strong> (Bill of Materials)</h3>
+<p><span style="font-family:verdana,geneva,sans-serif;">A bill of materials (BoM) is a list of the parts or components that are required to build a product. The BoM provides the manufacturer's part number (MPN) and the quantity needed for each component. At its most complex, a BoM is a multi-level document that provides build data for multiple sub-assemblies (products within products) and includes for each item: part number, approved manufacturers list (AML), mechanical characteristics and a whole range of component descriptors.</p>
+<p><span style="font-family:verdana,geneva,sans-serif;"> Originally used internally within a company, the BoM served as a way to track product changes and maintain an accurate list of required components. As manufacturing has become increasingly distributed, however, the BoM has taken on even greater importance. It serves as the primary reference file for product data when transferring product information from the original equipment manufacturer to the electronic manufacturing services provider and from the EMS to its vendors and suppliers.</p>
+<h3><strong>Recipe</strong></h3>
+<p><span style="font-family:verdana,geneva,sans-serif;">
+Recipe is used it to describe the manufacturing of products or the execution of a process. Recipes comprise information about the products and components of a process, the process steps to be executed, and the resources required for the production. Recipes are used at different enterprise levels. They serve as a basis for enterprise-wide investment decisions as well as for site-related long-term planning, or the conversion of a process in a plant. The recipe types of recipe management enable you to create a general description of the requirements or concrete procedural instructions depending on your needs. By making the data of enterprise-wide recipes more concrete, site- and plant-specific recipes are derived from them.</p>
+<p><span style="font-family:verdana,geneva,sans-serif;">
+You can say the object <strong>Recipe</Strong> is the description of an enterprise-specific process in process industries. A recipe consists of a header and several operations , each of which is carried out at a primary resource. An operation is subdivided into phases.It contains process control data that can be stored in the form of characteristic-based process instructions, which you define in the operation overview for the phases.</p>
+<h3><strong>Production Version</strong></h3>
+<p><span style="font-family:verdana,geneva,sans-serif;">
+Production Version defines for a material, the Bill of Material & Routing {Recipe} combination, for the production of a material, for a given Validity date & a lot size range.
+It is a key which determines the various production techniques according to which a material can be manufactured.</p>
+<p><span style="font-family:verdana,geneva,sans-serif;">
+When you come across scenarios where you have multiple Bill of Materials (BOMS) for a material and/or Multiple Routings/Recipes (task lists) for a Material then it becomes impossible for the system to choose a BOM and task list for your production order/Process order/Run Schedules; in such cases SAP has provided Production versions to solve your problems.
+Here you can define the BOM number/Usage and the Routing Group/Group Counter for a material which will be used for production of the material under the criteria of lot sizes and validity dates. This also helps the system, in picking the predefined BOM and Routing/Recipe rather than going mad on which to pick in the automatic MRP run.
+Every Production version for a material at a plant has a alphanumerical number assigned to it. You can lock a production order for use or release it for use in orders.</p>
+
+
+</div>
+	</div>
+
+</div>
+
+
+<div id="copyright">
+	<p>&copy;
+
+All the site contents are Copyright and the content authors. All rights reserved.
+All product names are trademarks of their respective companies.  This site is in no way affiliated with SAP AG.
+Every effort is made to ensure the content integrity.  Information used on this site is at your own risk.
+ The content on this site may not be reproduced or redistributed without the express written permission of
+this site or the content authors.| Design by <a href="http://templated.co" rel="nofollow">TEMPLATED</a>.</p>
+	<ul class="contact">
+		<li><a href="https://www.github.com/zahidkhan87" class="icon icon-github-alt" target="_blank"><span>Github</span></a></li>
+		<li><a href="https://facebook.com/zahid.mehmood.359778" class="icon icon-facebook" target="_blank"><span></span></a></li>
+		<li><a href="skype:ibm.zahid" class="icon icon-skype"><span>Skype</span></a></li>
+		<li><a href="mailto:zahidmehmood87@ymail.com" class="icon icon-envelope-alt"><span>Mail</span></a></li>
+			</ul>
+</div>
+</body>
+</html>
